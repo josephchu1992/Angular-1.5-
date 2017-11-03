@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="try">
+    <head>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="./js/app/app.module.js"></script>
+  	  <script src="./js/app/app.config.js"></script>
+  	  <script src="./js/app/comment/comment.module.js"></script>
+  	  <script src="./js/app/comment/comment.component.js"></script>
+  	  <script src="./js/app/testing/test.module.js"></script>
+  	  <script src="./js/app/testing/test.controller.js"></script>
+
+        <script src ="./js/app/blog-list/blog-list.module.js"></script>
+        <script src ="./js/app/blog-list/blog-list.component.js"></script>
+
+    </head>
+
+      <div>
+        <h1>message</h1>
+      </div>
+      <body>
+          <my-comp></my-comp>
+    		        <br>
+    		  <my-comp></my-comp>
+    		    <br>
+    		  <my-comp></my-comp>
+              <br>
+
+          	    <div class='messageBox'ng-controller="testController as vm" >
+                        <textarea ng-change="vm.countOf()" ng-model="vm.text" placeholder="It is made by controller"></textarea>
+                        <div class='counter'>total words:{{vm.counter}} </div>
+                </div>
+              <br>
+
+            <h1 class ='new-class'> Hello,
+              <span ng-if='name'>{{ name }} </span>
+              <span ng-if='!name'>World</span>
+              <input type ='text' ng-model='name'>
+            </h1>
+
+            <blog-list></blog-list>
+
+      </body>
+</html>
