@@ -25,3 +25,19 @@ textarea {
   margin-right: 5px;
   float:right;
 }
+
+.sidebar{
+  width:15%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: beige;
+}
+
+.content{
+margin-left:500px;
+  position: absolute;
+
+  background-color: beige;
+
+}
