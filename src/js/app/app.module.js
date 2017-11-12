@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('try',['comment', 'test', 'blogList']);
+angular.module('try',['ui.router', 'blogList', 'comment', 'test']);
