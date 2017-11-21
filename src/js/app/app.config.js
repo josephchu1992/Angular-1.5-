@@ -3,15 +3,14 @@
 
 angular.module('try')
 	.config(function($locationProvider, $stateProvider, $urlRouterProvider){
-				$locationProvider.html5Mode({
-					enabled:true
-				})
-				
-				$urlRouterProvider.otherwise('home');
-	
+				// $locationProvider.html5Mode({
+				// 	enabled:true
+				// })
+    		$locationProvider.hashPrefix('');
+
 				$stateProvider.state('home', {
 					  url: '/home',
-					  templateUrl:'../templates/home.html'
+					  templateUrl:'../../../templates/home.html'
 
 				});
 	
@@ -25,7 +24,10 @@ angular.module('try')
 				 	url: '/blog-list/',
 					component:'blogList'
 				 });
-				
+
+					$urlRouterProvider.otherwise('/home');
+
+
 //				 $stateProvider.state('blog-list.detail', {
 //				 	url: '/blog-list-detail/:id',
 //					component:'blogListDetail'
