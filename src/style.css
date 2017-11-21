@@ -12,6 +12,7 @@ textarea {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    background-color: antiquewhite
 }
 
 .messageBox{
@@ -26,18 +27,39 @@ textarea {
   float:right;
 }
 
-.sidebar{
-  width:15%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background-color: beige;
+.well{
+    margin-bottom: 0px;
 }
 
-.content{
-margin-left:500px;
-  position: absolute;
-
-  background-color: beige;
-
+.container-1{
+    display: flex;
+    align-items: stretch;
 }
+
+.container-1 .html .body{
+    height:100%;
+}
+
+
+.box-1{
+    border: 1px #ccc solid;
+    flex: 1;
+    background-color: #ffafaa;
+    align-items: stretch;
+}
+
+.box-2{
+    border: 1px #ccc solid;
+    flex:7;
+    background-color: antiquewhite;
+    align-items: stretch;
+}
+
+
+/*.content{*/
+/*margin-left:500px;*/
+  /*position: absolute;*/
+
+  /*background-color: beige;*/
+
+/*}*/
