@@ -5,11 +5,14 @@
 
 <h1>{{ vm.title }}</h1>
 
-<ul>
-    <li ng-repeat ='item in vm.items'>
-        <a ng-href='/blog/{{ item.id }}'/> {{ item.title }} {{ item.publishDate }}</li></a>
-    </li>
-</ul>
+<div class ="container">
+        <ul>
+            <li ng-repeat ='item in vm.items'>
+                <a ng-href='/blog/{{ item.id }}'/> {{ item.title }} {{ item.publishDate }}</li></a>
+            </li>
+        </ul>
 
-<span ng-if='vm.items.length ==4'>4 Items currently</span>
-<span ng-if='vm.items.length ==0'>Posts coming soon</span>
+        <span ng-if='vm.items.length ==4'>4 Items currently</span>
+        <span ng-if='vm.items.length ==0'>Posts coming soon</span>
+
+</div>

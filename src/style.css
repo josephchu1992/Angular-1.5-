@@ -55,6 +55,13 @@ textarea {
     align-items: stretch;
 }
 
+.container{
+    border: 1px #ccc solid;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    margin-top: 2em;
+}
+
 
 /*.content{*/
 /*margin-left:500px;*/
